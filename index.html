@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d3acebc09b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div id="none"></div>
+            </nav>
+            <div class="row">
+                <div class="header-text">
+                    <h1>Hi, I am <br><span>Debanjan Konar</span></h1>
+                    <p>CSE 3rd Year Undergrad</p>
+                    <p>I am a <span class="auto-type"></span></p>
+                    <a href="https://drive.google.com/file/d/1BgwKxDYfZjYq572cQCJCChDh3fKjUI1l/view" class="btn btn2" target="_blank">Download CV</a>
+
+                </div>
+                <div class="about-col-1" id="home-img">
+                    <img src="images/debanjan_smiling_pic.jpeg" alt="user">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/formal photo.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm currently in my final year of B.Tech in Computer Science. EX-Intern at Feynn Labs, where I led a team of 5 to develop AI products and deploy ML models, achieving high accuracy rates.
+                        <br><br>
+                    Beyond academics and internships, I enjoy writing, reading, and photography. My strong analytical thinking, problem-solving skills, and efficient time management make me a reliable team player and a resourceful individual.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('achievements')">EXPERIENCE</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Machine Learning</b></span><br>
+                            ML Expertise: <b>Computer Vision, Natural Language Processing(NLP), Regression, Classification, Deep Learning, Unsupervised Learning </b><br>
+                            </li>
+                            <li><span><b>Technical Skills</b></span><br>Programming Languages: <b>Java, C/C++, Python, JavaScript, HTML, CSS, SQL ; Shell scripting (Bash), AWK.</b><br>
+                            Frameworks-Libraries: <b>TensorFlow, Flask, Streamlit.</b> <br>
+                            Development Environments:<b>Jupyter Notebooks, Google Colab, Anaconda, Visual Studio, Git</b></li>
+                            <li><span><b>Tools</b></span><br>
+                            <b>Seaborn, Scikit-Learn, Matplotlib, OpenCV</b></li>
+                            <li><span><b>Spoken Languages</b></span><br>
+                            <b>Bengali (Native), English (Proficient), Hindi (Proficient)</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Techno Main Salt Lake (2021-2025)</span><br>B.Tech in <b>Computer Science and Engineering</b><br>Related Coursework: Data Structures & Algorithms, Computer Organization & Architecture, Operating Systems, Artificial Intelligence, Object-Oriented Programming, DBMS, Computer Networks <br><b>GPA: 8.8/10</b> </li>
+                            <li><span>Burnpur Riverside School(2018-2020)</span><br>Higher Secondary<br>Coursework: Physics, Chemistry, Mathematics, Computer Application, Languages <br><b>Grade: 94.6%</b></li>
+                            <li><span>St. Joseph's Convent HS(2018)</span><br>Secondary <br><b>Grade: 91.8% </b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>EX-Intern at Feynn Labs (Aug 23- nov 23)</span><br>Worked as Ml-Intern at Feynn Labs </li>
+                            <li><span>CO-HEAD of ML Team in GDSC</span><br>I am a functioning member and Co-Head of Machine Learning team in Google Developers Student Club</li>
+                            <li><span>Participated in SIH-23</span><br>Participated in Smart India Hackathon 2023 and got selected in the intra-college hackathon</li>
+                            <!-- <li><span>Amazon ML Summer School</span><br>Participated in Amazon ML Summer School 2024</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------projects--------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="active-work">
+                    <h2>Image based Rice type Classification</h2>
+                    <p>Can Classify deferent types of rice with the accuracy of 94.4%, based on images <br> <br>
+                        <b>Tools used: </b>OpenCV, Glob, Pathlib, Keras&Tensorflow, Convoluted Neural Network, Scikit-learn Jupyter Notebook (Python).</p>
+                    
+                    <a href="https://github.com/Uni-Bo/Machine_Learning/tree/main/Rice_classification"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+
+                <div class="active-work">
+                    <h2>Green-IQ:Rural Educational Website </h2>
+                    <p>The GreenIQ Web Application is the ultimate solution to all rural education problems.This team project incorporates solutions like a Virtual Navigation Assistant, Live 1:1 Booked Sessions with assigned mentors, a Chatbot for enhancing communication skills, a Content Gallery.</p>
+                    
+                    <a href="https://github.com/Uni-Bo/greeniq_python_backend"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    
+                    <a href="https://green-iq-deployed.vercel.app/"><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+
+                <div class="active-work">
+                    <h2>Network Intrusion Detection System</h2>
+                    <p>The Network Intrusion Detection System is a cybersecurity project developed to protect networks from malicious activities and intrusions. This system employs Machine Learning algorithms to identify suspicious network behavior </p>
+                    
+                    <a href="https://github.com/Uni-Bo/Network_Intrution_Detection"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+
+                <div class="work">
+                    <h2>Gold Price Prediction System</h2>
+                    <p>This project utilizes Python along with several libraries and frameworks, to predict the price of gold.  <br>
+                        <b>Tools Used:</b> NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, and XGBoost,  <br> 
+
+                        Two main models used for prediction: <br>
+                        
+                        1. Random Forest Regressor <br>
+                        2. Neural Network</p>
+                    
+                    <a href="https://github.com/Uni-Bo/Machine_Learning/tree/main/gold_price_prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+
+                <div class="work">
+                    <h2>T20 Score Prediction System</h2>
+                    <p>The T20 Score Predictor gives an estimated run/score based on match data.The Machine Learning model used for prediction here is XGBRegressor. </p>
+                    
+                    <a href="https://github.com/Uni-Bo/Cricket_Score_Predictor"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+
+              
+
+                <div class="work">
+                    <h2>Noteable Projects</h2>
+                    <p>Linux Based project focused on learning and enhancing interprocess communication</p>
+                    
+                    <a href="https://github.com/Uni-Bo/Interprocess_Communication_and_Networking"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+
+                    <br>
+
+                    <p>JAVA project focused on basics and nitty-gritty of the language, including GUI, Threads and more.</p>
+                    
+                    <a href="https://github.com/Uni-Bo/Java/tree/main/oops"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    <br>
+
+                    <p>This GitHub repository showcases various ML projects with technologies.</p>
+                    
+                    <a href="https://github.com/Uni-Bo/Machine_Learning"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+
+                </div>
+            </div>
+            <button class="btn" id="project-btn" onclick="opendiv()">See more</button>
+            <button class="btn hide-btn" id="project-btn-less" onclick="closediv()">See less</button>
+        </div>
+    </div>
+
+    <!-- ----contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    
+                    <p><i class="fa-solid fa-envelope"></i> debanjankonar4@gmail.com</p>
+                    
+                    <p><i class="fa-solid fa-phone"></i>+91 9679417536</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/debanjan-konar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Uni-Bo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Debanjan Konar 🂡</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed= new Typed(".auto-type",{
+            strings:["Machine Learning Enthusiast","Problem Solver","Consistent Learner","Passionate coder"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+</body>
+</html>
