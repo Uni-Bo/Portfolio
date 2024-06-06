@@ -8,8 +8,21 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #2f2b4a;
+    background-color: #65523e;
     color: #ffffff;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/white-elegant-texture-background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust this value to control the opacity */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
 #header{
@@ -23,7 +36,7 @@ body{
     padding: 10px 10%;
 }
 #sidemenu{
-    background-color:  #523e64;
+    background-color:  #7a6752c3;
     color: #ffffff;
     border-radius: 20px;
 }
@@ -206,7 +219,7 @@ nav .fa-solid{
     margin-top: 50px;
 }
 .work-list div{
-    background: linear-gradient(rgba(114, 84, 143, 0.651),#d1967cee);
+    background: linear-gradient(rgba(117, 98, 73, 0.651),#d1b57cee);
     padding: 40px;
     font-size: 16px;
     color: #ffffff;
@@ -254,13 +267,13 @@ nav .fa-solid{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    background-color: #3b2b4a;
+    background-color: #4a3b2b;
     color: #f2f2f2;
     transition: background 0.5s;
 }
 
 .btn:hover{
-    background: #d17c7d;
+    background: #875252;
 }
 .btn.hide-btn{
     display: none;
@@ -302,7 +315,7 @@ nav .fa-solid{
 }
 .btn.btn2{
     display: inline-block;
-    background: #cf8f5e;
+    background: #b5947a;
 }
 
 .contact-right form{
@@ -312,7 +325,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #6d5383;
+    background: #cf8f5e;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -328,11 +341,11 @@ form input, form textarea{
 }
 
 .btn2:hover{
-    background-color: #d17c7d;
+    background-color: #d17c7d6c;
 }
 
 #msg{
-    color: #61b752;
+    color: #b8e6b0;
     margin-top: -40px;
     display: block;
 }
@@ -342,7 +355,7 @@ form input, form textarea{
     text-align: center;
     padding: 10px 0;
     font-size: 15px;
-    background: #262626;
+    background: #897171;
     font-weight: 300;
     margin-top: 20px;
     color: #f2f2f2;
